@@ -21,7 +21,7 @@ Overview: scripts for quickly batch processing images with Fiji. The goal is to 
   5. Navigate to the .lif file of interest and run. Individual tifs will be generated in a folder with the same name as the source lif file.
   
   ### Prepare to batch process tifs
-  6. Before proceeding with processing, images that should be processed in the same way should be grouped together within subfolders (ex. if you imaged three different stains within one .lif file, separate the newly extracted tifs into three subfolders). The macro should only be run on images with a single z-plane, either through only imaging one plane or already applying a z projection before batch processing.
+  6. Before proceeding with processing, images that should be processed in the same way should be grouped together within subfolders (ex. if you imaged three different stains within one .lif file, separate the newly extracted tifs into three subfolders). The macro should only be run on images with a single z-plane, either through only imaging one plane or already applying a z projection before batch processing. *Note: the processing macro will use the name of each tif file when saving the individual channel splits. Now is the time to change the file names so that you don't have to go in and change it in 20 different files later!*
   7. Manually load a representative image in Fiji for a given stain and note the minimum and maximum intensities for each channel and whether or not any channels need despeckling.
   8. Within Fiji, run Plugins>Macros>Edit... and navigate to wherever "*BatchChannel_SplitEditSave_preprocessed.ijm*" is and open it.
   9. Press "Run" in the bottom left of the window.
